@@ -100,6 +100,16 @@ public class TennisGame2 implements TennisGame
         }
         return score;
     }
+
+    public String getResScore(int score){
+        return switch (score) {
+            case 0 -> "Love";
+            case 1 -> "Fifteen";
+            case 2 -> "Thirty";
+            case 3 -> "Forty";
+            default -> "";
+        };
+    }
     
     public void SetP1Score(int number){
         
